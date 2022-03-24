@@ -1,6 +1,18 @@
 # Task List
 
-Description
+This app allows adding/removing/marking daily tasks on your to-do list. To-do list is a responsive app you can use on any device you want.
+
+## Technology used
+1. REACT-APP
+2. BABEL
+3. Javascript
+4. Javascript ES6+ Features (Arrow Functions)
+5. HTML
+6. CSS
+7. CSS (Grid/Flex)
+8. MediaQueries
+9. BEM
+10. Immutability
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
