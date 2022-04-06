@@ -8,18 +8,28 @@ import Container from "./Container";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  
+
   const [tasks, setTasks] = useState([
     { id: 1, content: "Poćwiczyć", done: true },
     { id: 2, content: "Pouczyć się", done: false },
   ]);
-  
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(tasks => tasks.id !== id));
+  };
+
+  const toggleTaskDone = (id) => {
+    setTasks(tasks => tasks.map(task => {
+      if (task.id === id) {
+        return { ...task, done: !task.done };
+      }
+
+      return task;
+    }))
   };
 
   return (
@@ -33,7 +43,7 @@ function App() {
 
       <Section
         title="Lista Zadań"
-        body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />}
+        body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />}
         extraHeaderContent={<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} />}
       />
     </Container>
