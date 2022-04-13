@@ -9,6 +9,7 @@
     background-color: transparent;
     color: teal;
     transition: color 0.3s;
+    cursor: pointer;
 }
 
 .buttons__button:hover {

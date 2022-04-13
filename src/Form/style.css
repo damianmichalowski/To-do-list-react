@@ -16,6 +16,7 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .form__button:hover {

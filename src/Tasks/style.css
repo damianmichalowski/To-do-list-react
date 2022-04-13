@@ -35,6 +35,7 @@
     width: 30px;
     color:white;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .tasks__buttonDone {
