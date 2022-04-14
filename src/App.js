@@ -9,11 +9,7 @@ import Container from "./Container";
 const getLocalTasks = () => {
   let tasks = localStorage.getItem("tasks");
 
-  if (tasks) {
-    return JSON.parse(localStorage.getItem("tasks"));
-  }else {
-    return [];
-  }
+  return tasks ? JSON.parse(tasks) : [];
 };
 
 function App() {
