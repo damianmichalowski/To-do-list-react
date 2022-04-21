@@ -1,12 +1,14 @@
-.section {
+import styled from "styled-components";
+
+export const Container = styled.section`
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 900px;
     width: 100%;
     box-shadow: 0px 0px 8px rgb(204, 204, 204);
-}
+`;
 
-.section__header {
+export const Header = styled.section`
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
@@ -16,21 +18,13 @@
     background-color: white;
     padding: 20px;
     margin: 0;
-}
+`;
 
-.section__title {
+export const Title = styled.h2`
     margin: 0;
-}
+`;
 
-.section__body {
+export const Body = styled.section`
     background-color: white;
     padding: 20px;
-}
-
-@media (max-width: 767px) {
-    .section__header {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-}
+`;

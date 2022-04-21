@@ -1,9 +1,9 @@
-import "./style.css";
+import { Title } from "./styled";
 
-const Header = ({title}) => (
-    <header className="section header">
-        <h1> {title} </h1>
-      </header>
+const Header = ({ title }) => (
+  <Title>
+    <h1> {title} </h1>
+  </Title>
 );
 
 export default Header;
