@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonsStyled = styled.div`
+export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
