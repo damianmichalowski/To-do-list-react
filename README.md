@@ -6,8 +6,8 @@ This app allows adding/removing/marking daily tasks on your to-do list. To-do li
 https://damianmichalowski.github.io/todos-list-react/
 
 ## Technology used
-1. REACT-APP
-2. BABEL
+1. CREATE-REACT-APP
+2. BABEL/JSX
 3. Javascript
 4. Javascript ES6+ Features (Arrow Functions)
 5. HTML
@@ -16,6 +16,9 @@ https://damianmichalowski.github.io/todos-list-react/
 8. MediaQueries
 9. BEM
 10. Immutability
+11. React Hooks
+12. Custom hooks
+13. Styled Components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

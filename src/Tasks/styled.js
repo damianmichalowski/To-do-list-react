@@ -35,7 +35,7 @@ export const Button = styled.button`
     margin: 0;
     height: 30px;
     width: 30px;
-    color:white;
+    color: ${({theme}) => theme.color.white};
     transition: background 0.3s;
     cursor: pointer;
 

@@ -15,9 +15,13 @@ export const Header = styled.section`
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
-    background-color: white;
+    background-color: ${({theme}) => theme.color.white};
     padding: 20px;
     margin: 0;
+    
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Title = styled.h2`
@@ -25,6 +29,6 @@ export const Title = styled.h2`
 `;
 
 export const Body = styled.section`
-    background-color: white;
+    background-color: ${({theme}) => theme.color.white};
     padding: 20px;
 `;

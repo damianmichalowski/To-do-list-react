@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -13,23 +13,23 @@ export const Button = styled.button`
     margin-left: 20px;
     border: none;
     background-color: transparent;
-    color: teal;
+    color: ${({theme}) => theme.color.teal};
     transition: color 0.3s;
     cursor: pointer;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
 
     &:active {
-        color: hsl(180, 100%, 45%);
+        filter: brightness(130%);
     }
 
     &:disabled {
-        color: rgb(179, 179, 179);
+        color: ${({theme}) => theme.color.nobel};
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 10px 0;
     }
 `;
