@@ -40,18 +40,18 @@ export const Button = styled.button`
     cursor: pointer;
 
     ${({ toggleDone }) => toggleDone && css`
-        background: hsl(116deg 72% 27%);
+        background: ${({theme}) => theme.color.bilbao};
 
         &:hover{
-            background: hsl(116deg 72% 37%);
+            filter: brightness(130%);
         }
     `}
 
     ${({remove}) => remove && css`
-        background: hsl(0deg 79% 44%);
+        background: ${({theme}) => theme.color.red};
 
         &:hover{
-            background: hsl(0deg 79% 55%);
+            filter: brightness(130%);
         }
     `}
 `;

@@ -12,15 +12,15 @@ export const StyledForm = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid ${({theme}) => theme.color.nobel};
+    border: 1px solid ${({ theme }) => theme.color.lightGrey};
 `;
 
 export const Button = styled.button`
     font-weight: 300;
     padding: 10px;
     border: none;
-    background-color: ${({theme}) => theme.color.teal};
-    color: ${({theme}) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     transition: 0.3s;
     cursor: pointer;
 

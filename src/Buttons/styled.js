@@ -13,7 +13,7 @@ export const Button = styled.button`
     margin-left: 20px;
     border: none;
     background-color: transparent;
-    color: ${({theme}) => theme.color.teal};
+    color: ${({ theme }) => theme.color.teal};
     transition: color 0.3s;
     cursor: pointer;
 
@@ -26,7 +26,7 @@ export const Button = styled.button`
     }
 
     &:disabled {
-        color: ${({theme}) => theme.color.nobel};
+        color: ${({ theme }) => theme.color.lightGrey};
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
