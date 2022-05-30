@@ -1,3 +1,5 @@
-import TasksApp from "./features/tasks/TasksApp";
+import Tasks from "./features/tasks/Tasks";
 
-export default () => <TasksApp />;
+const App = () => <Tasks />;
+
+export default App;
