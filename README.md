@@ -19,6 +19,7 @@ https://damianmichalowski.github.io/todos-list-react/
 11. React Hooks
 12. Custom hooks
 13. Styled Components
+14. REDUX
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
