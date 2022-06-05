@@ -9,7 +9,6 @@ function Tasks() {
   return (
     <Container>
       <Header title="Lista Zadań" />
-
       <Section
         title="Dodaj Zadanie"
         body={<Form />}
@@ -20,7 +19,6 @@ function Tasks() {
         body={<TasksList />}
         extraHeaderContent={<Buttons />}
       />
-
     </Container>
   );
 }
