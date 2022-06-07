@@ -20,6 +20,14 @@ https://damianmichalowski.github.io/todos-list-react/
 12. Custom hooks
 13. Styled Components
 14. REDUX
+15. REDUX-SAGA
+16. REACT-ROUTER
+
+
+## Screens
+![App Screenshot](src/images/screen1.jpg)
+
+![App Screenshot](src/images/screen2.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
