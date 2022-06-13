@@ -3,7 +3,8 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
-import Navigation from "./common/Navigation"
+import Navigation from "./Navigation"
+import { toTasks, toAuthor, toTask } from "./routes";
 
 export default () => (
     <HashRouter>
@@ -12,13 +13,13 @@ export default () => (
                 <Route path="/zadania/:id">
                     <TaskPage />
                 </Route>
-                <Route path="/zadania">
+                <Route path={toTasks()}>
                     <TasksPage />
                 </Route>
-                <Route path="/author">
+                <Route path={toAuthor()}>
                     <AuthorPage />
                 </Route>
-                <Route path="/">
+                <Route path={toTasks()}>
                     <Redirect to="/zadania" />
                 </Route>
             </Switch>
