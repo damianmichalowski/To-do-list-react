@@ -9,15 +9,17 @@ export const useQueryParameter = (key) => {
 export const useReplaceQueryParameter = () => {
     const history = useHistory();
     const location = useLocation();
-    const searchParams = new URLSearchParams(location.search);
-
+    
     return ({key, value}) => {
+        const searchParams = new URLSearchParams(location.search);
+
         if (value === undefined) {
             searchParams.delete(key);
         } else {
             searchParams.set(key, value);
         }
-    
-        history.push(`${location.pathname}?${searchParams.toString()}`);
+        
+        const newSearch = searchParams.toString();
+        history.push(`${location.pathname}?${newSearch}`);
     }
 };
