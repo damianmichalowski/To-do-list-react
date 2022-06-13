@@ -8,11 +8,9 @@ const ButtonRandomTasks = () => {
     const loading = useSelector(selectIsLoading);
 
     return (
-        <>
             <Button onClick={() => dispatch(fetchExampleTasks())} disabled={loading}>
                 {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
             </Button>
-        </>
     );
 };
 
