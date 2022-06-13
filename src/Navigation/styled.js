@@ -8,6 +8,10 @@ export const StyledNavLink = styled(NavLink)`
     &.active {
       font-weight: bold;
     }
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
 `;
 
 export const NavBar = styled.nav`
