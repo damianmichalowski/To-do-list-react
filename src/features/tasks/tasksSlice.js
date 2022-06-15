@@ -28,14 +28,14 @@ const tasksSlice = createSlice({
                 tasks.done = true;
             });
         },
-        fetchExampleTasks: state => { 
+        fetchExampleTasks: state => {
             state.loading = true;
         },
-        fetchExampleTasksSucces: (state, { payload: tasks }) => { 
-            state.tasks = tasks;
+        fetchExampleTasksSucces: (state, { payload: tasks }) => {
+            state.tasks.push(...tasks);
             state.loading = false;
         },
-        fetchExampleTasksFail: state => { 
+        fetchExampleTasksFailure: state => {
             state.loading = false;
         },
     },
@@ -48,7 +48,7 @@ export const {
     removeTask,
     setAllDone,
     fetchExampleTasks,
-    fetchExampleTasksFail,
+    fetchExampleTasksFailure,
     fetchExampleTasksSucces,
 } = tasksSlice.actions;
 
@@ -65,11 +65,11 @@ export const getTaskByID = (state, taskId) => selectTasks(state).find(({ id }) =
 export const selectTasksByQuery = (state, query) => {
     const tasks = selectTasks(state);
 
-    if(!query || query.trim() === ""){
+    if (!query || query.trim() === "") {
         return tasks;
     }
 
-    return tasks.filter(({content}) => content.toUpperCase().includes(query.trim().toUpperCase()));
-} 
+    return tasks.filter(({ content }) => content.toUpperCase().includes(query.trim().toUpperCase()));
+}
 
 export default tasksSlice.reducer;
