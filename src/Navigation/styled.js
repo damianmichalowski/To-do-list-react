@@ -27,6 +27,3 @@ export const List = styled.ul`
   margin-top: 0;
   padding: 15px;
 `;
-
-export const ListItem = styled.li`
-`;

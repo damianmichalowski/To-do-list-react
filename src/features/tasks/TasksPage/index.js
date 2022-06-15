@@ -1,7 +1,7 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "../TasksPage/buttonsText/Buttons";
-import ButtonRandomTasks from "../TasksPage/buttonsText/ButtonRandomTask";
+import ButtonExampleTasks from "../TasksPage/buttonsText/ButtonExampleTask";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
@@ -14,7 +14,7 @@ function TasksPage() {
       <Section
         title="Dodaj Zadanie"
         body={<Form />}
-        extraHeaderContent={<ButtonRandomTasks />}
+        extraHeaderContent={<ButtonExampleTasks />}
       />
 
       <Section

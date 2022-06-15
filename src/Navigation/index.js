@@ -4,12 +4,12 @@ import { toTask, toAuthor, toTasks } from "../routes";
 const Navigation = () => (
     <NavBar>
         <List>
-            <ListItem>
+            <li>
                 <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
-            </ListItem>
-            <ListItem>
+            </li>
+            <li>
                 <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
-            </ListItem>
+            </li>
         </List>
     </NavBar>
 );
