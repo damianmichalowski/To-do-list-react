@@ -3,7 +3,7 @@
 This app allows adding/removing/marking daily tasks on your to-do list. To-do list is a responsive app you can use on any device you want.
 
 ## DEMO link
-https://damianmichalowski.github.io/todos-list-react/
+https://damianmichalowski.github.io/To-do-list-react/
 
 ## Technology used
 1. CREATE-REACT-APP
