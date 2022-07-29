@@ -1,5 +1,5 @@
-import { StyledNavLink, NavBar, List, ListItem} from "./styled"
-import { toTask, toAuthor, toTasks } from "../routes";
+import { StyledNavLink, NavBar, List} from "./styled"
+import { toAuthor, toTasks } from "../routes";
 
 const Navigation = () => (
     <NavBar>
